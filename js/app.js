@@ -35,15 +35,18 @@ Employee.prototype.calculateNetSalary  = function () {
 
 Employee.prototype.render  = function () {
     console.log(this.fullName+', Salary = '+this.salary);
-    return ' Name  = '+this.fullName+' , Salary = '+this.salary;
+    return ' Name : ' + this.fullName + ' - ID :' + this.employeeID + '  Department : ' + this.department + ' -  Level : ' + this.level +', Salary = '+this.salary;
 }
-const employee1 = new Employee(1000 , "Ghazi Samer", "Administration", "Senior" , "../assets/person1.jpg")
-const employee2 = new Employee(1001 , "Lana Ali", "Finance","Senior" , "../assets/person2.jpg")
-const employee3 = new Employee(1002 , "Tamara Ayoub" , "Marketing" , "Senior" , "../assets/person3.jpg")
-const employee4 = new Employee(1003 , "Safi Walid" , "Administration" , "Mid-Senior" , "../assets/person4.jpg")
-const employee5 = new Employee(1004 , "Omar Zaid" , "Development" , "Senior" , "../assets/person1.jpg")
-const employee6 = new Employee(1005 , "Rana Saleh" , "Development" , "Junior" , "../assets/person2.jpg")
-const employee7 = new Employee(1006 , "Hadi Ahmad" , "Finance" , "Mid-Senior" , "../assets/person3.jpg")
+const employee1 = new Employee(1000 , "Ghazi Samer", "Administration", "Senior" , "../assets/person3.jpg")
+const employee4 = new Employee(1003 , "Safi Walid" , "Administration" , "Mid-Senior" , "../assets/person2.jpg")
+
+const employee2 = new Employee(1001 , "Lana Ali", "Finance","Senior" , "../assets/person1.jpg")
+const employee7 = new Employee(1006 , "Hadi Ahmad" , "Finance" , "Mid-Senior" , "../assets/person6.jpg")
+
+const employee3 = new Employee(1002 , "Tamara Ayoub" , "Marketing" , "Senior" , "../assets/person7.jpg")
+
+const employee5 = new Employee(1004 , "Omar Zaid" , "Development" , "Senior" , "../assets/person4.jpg")
+const employee6 = new Employee(1005 , "Rana Saleh" , "Development" , "Junior" , "../assets/person8.jpg")
 
 
 for (let i = 0; i < Employees.length; i++) {
